@@ -1,16 +1,22 @@
 # snp500-ml-predictor-
-predict 5 day S&amp;P 500 returns using Machine Learning and price-based features (last 200 days). 
+Overview:
+Built a machine learning model to forecast 5-day returns of the S&P 500 index using historical price-based indicators. This project demonstrates the use of feature engineering and regression modelling in a financial context.
 
-Historical S&P 500 price data is fetched with yfinance 
-features engineered such as moving averages and volatility
-Random Forest Regressor is trained to predict 5-day returns
-Predicted vs actual returns visualised in a graph 
+Key Steps and Results: 
+- collected historical S&P 500 data with yfinance.
+- engineered predictive features such as moving averages, volatility, and momentum.
+- Trained a Random Forest Regressor to predict short-term returns.
+- Achieved a R^2 of ~0.12 on the test set (capturing some market structure despite noise). 
+- Visualised predicted vs actual returns, showing the model's ability to track directional trends, though with limited accuracy (reflecting the inherent difficulty of short-term market prediction).
 
-Skills used:
-yfinance (data collection)
-pandas (data manipulation) 
-scikit-learn (ML model training) 
-matplotlib (visualisation)
-joblib (model saving/loading) 
+Impact:
+This project demonstrates the challenges of equity return prediction while showcasing the ability to design end-to-end ML pipelines, evaluate models with appropriate metrics, and communicate results transparently. 
 
-This project is for educational purposes only. It is not financial advice and should not be used for real trading. 
+Skills demonstrated: 
+- Python
+- yfinance
+- scikit-learn
+- regression modeling
+- financial feature engineering
+- performance evaluation
+- data visualisation 
